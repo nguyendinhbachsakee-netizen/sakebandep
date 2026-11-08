@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dép sake</title>
+    <style>
+      body {
+        background: #F9F7F1;
+        font-family: Arial,Roboto,OpenSans,Tahoma,Times New Roman;
+      }
+      h1 {
+        color: #8333E9;
+        text-align: center;
+      }
+      .noidung {
+        background: #FFC6BF;
+        border-radius: 15px;
+        border: 3px solid gray;
+        p {
+          color: #FF7FAE;
+          padding: 3px;
+        }
+        button {
+          display:block;
+          background: none;
+          border: 2px solid gray;
+          font-size: medium;
+          padding: 3px;
+          margin-left: auto;
+          border-radius: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dép Sake, siêu xịn</h1>
+    <div class = "noidung">
+      <p>Mang Dép Sake - Đi đâu cũng thích! ✨<br>
+
+Bạn là khách hàng thân thiết? Nhận ngay voucher giảm 50%, giá chỉ còn 50K!
+
+<br>Nếu là lần đầu đến chơi, bạn vẫn có thể sở hữu em nó với giá cực hời 100K.
+      </p>
+      <button onclick=kt()>Chọn Giá 50K (Dành cho Hội Viên)</button>
+      <button onclick=muahang()>Chọn Giá 100K (Khách Mới)</button>
+    </div>
+  </body>
+  <script>
+    function kt() {
+      location.href="login.html";
+    }
+    function muahang() {
+      location.href="muahang2.html";
+    }
+  </script>
+</html>

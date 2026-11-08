@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+    <title>Dép sake</title>
+    <style>
+      body {
+        background: #F9F7F1;
+        font-family: Arial,Roboto,OpenSans,Tahoma,Times New Roman;
+      }
+      h1 {
+        color: #8333E9;
+        text-align: center;
+      }
+      .noidung {
+        background: #FFC6BF;
+        border-radius: 15px;
+        border: 3px solid gray;
+        p {
+          color: #FF7FAE;
+        }
+        button {
+          display:block;
+          background: lightyellow;
+          border: 2px solid gray;
+          font-size: 25px;
+          padding: 3px;
+          margin-left: auto;
+          border-radius: 10px;
+        }
+        input[type="text"],input[type="email"] {
+          background: #F3ECDB;
+          border-radius: 20px;
+          border: 3px solid black;
+          color: black;
+          display: block;
+          font-size: 25px;
+          text-align: center;
+          margin: 10px auto;
+        }
+        .radio-chon {
+          width: fit-content;
+          margin: 0px auto;
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="abt">Điền thông tin cá nhân</h1>
+    <div class="noidung">
+      <form action = "https://formspree.io/f/xrppvdbb" method="POST">
+        <input type="text" name="ten" placeholder="Tên">
+        <input type="text" name="dc" placeholder="Địa chỉ">
+        <input type="text" name="tinhthanh" placeholder="Tỉnh thành sau sát nhập">
+        <div class="radio-chon">
+          <input type="radio" id="dp" name="deplao">
+          <label for="dp">Dép lào</label><br>
+          <input type="radio" id="dcr" name="depcross">
+          <label for="dcr">Dép cross</label><br>
+        </div>
+        <input type="text" name="sdt" placeholder="Số điện thoại">
+        <input type="hidden" name="gia" value="50K">
+        <button type = "submit" >Gửi</button>
+      </form>
+    </div>
+  </body>
+</html>

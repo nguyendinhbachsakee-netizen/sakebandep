@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dép sake</title>
+    <style>
+      body {
+        background:#7F886A;
+        font-family: Arial,Roboto,OpenSans,Tahoma,Times New Roman;
+      }
+      h1 {
+        font-size:40px;
+        color: #F3ECDB;
+        text-align: center;
+      }
+      .login {
+        background: #F3ECDB;
+        border-radius: 20px;
+        border: 3px solid black;
+      }
+      .login input {
+        border-radius: 10px;
+        border: none;
+        background: none;
+        font-size: 30px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .login button {
+        background: #F3FCFB;
+        border: none;
+        border-radius: 20px;
+        font-size: 30px;
+        display: block;
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Đăng nhập</h1>
+    <div class="login">
+      <input id="name" placeholder="tên đăng nhập">
+      <input id="mk" type="text" placeholder="Mật khẩu">
+      <button onclick=check()>gửi</button>
+    </div>
+  </body>
+  <script>
+    function check() {
+      const name = document.getElementById("name").value;
+      const matkhau = document.getElementById("mk").value;
+      if (name == "Sake" && matkhau == "Toilaai1@") {
+        location.href="muahang.html";
+      }
+      else {
+        alert("sai mật khẩu");
+      }
+    }
+  </script>
+</html>
